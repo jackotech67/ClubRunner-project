@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body id="bodyContent">
+
+    
+
+    
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+
+    <script>
+              document.addEventListener('DOMContentLoaded', function () 
+              {
+                  document.querySelectorAll('fb\\:like, .fb-like, .fb_iframe_widget').forEach(el => el.style.display = 'none');
+              });
+    </script>
+    <script>
+        (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+        } (document, 'script', 'facebook-jssdk'));
+    </script>
+    
+
+    <div class="main-body-wrapper default custom-members-portal">
+            <header class="main-header-wrapper">
+                
+
+	<div class="login-band">
+	    <div class="container">
+	        <div class="loginbar">
+	            
+
+        	    <div class="login-area">
+	                
+    <div class="input-group search-bar">
+        <span class="input-group-addon">
+            <a onclick="doSearch()"><i class="fas fa-search"></i></a>
+        </span>
+        <input id="searchString" type="search" class="field-control search-string" placeholder="Search" aria-label="search">
+        
+    </div><!-- /input-group -->
+
+<div class="loginArea2">
+    <div class="loginArea3">
+
+ <span class="login-area-name">Liam Jackson</span>
+<span class="vertical-separator"><span class="sr-only">|</span></span>
+                        <span class="login-area-enter">
+                            <a href="/12132/Redirect/GoTo?Portal=admin.clubrunner.ca&amp;RedirectController=Welcome&amp;RedirectAction=Default&amp;PortalLanguageCode=en-ca" tabindex="0" class="font-primary">Member Area</a>
+                        </span>
+                        <span class="vertical-separator"><span class="sr-only">|</span></span>            <span class="logout-link">
+                <a href="http://katikatirotary.org.nz/12132/Member/Logout?OriginalUrl=IUVvNMp1eVwIFS0DPR4Kp7guqHQVJnFLTe8AXkaXdHEOA/WBNj0C1vh4kT80s2lqqlo4AVSpb91UnBPCT6KIdSunzPcwxs1lpOFnXcnXTgDCRWRuQDRURkhN93z391B/">Logout</a>
+            </span>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    $(function () {
+        $("#searchString").keyup(function (event) {
+            if (event.keyCode == 13) {
+                doSearch();
+            }
+        });
+    });
+
+
+    function doSearch() {
+        var searchString = $("#searchString").val();
+
+        searchString = replaceAll(searchString, ".", "-~0-");
+        searchString = replaceAll(searchString, "%", "-~1-");
+        searchString = replaceAll(searchString, "?", "-~2-");
+        searchString = replaceAll(searchString, ":", "-~3-");
+        searchString = replaceAll(searchString, "/", "-~4-");
+        searchString = replaceAll(searchString, "+", "-~5-");
+        searchString = replaceAll(searchString, "*", "-~6-");
+        searchString = replaceAll(searchString, "&", "-~7-");
+        searchString = replaceAll(searchString, "\"", "-~8-");
+
+        searchString = encodeURIComponent(searchString);
+        console.log(searchString);
+        var redirectUrl = $('#baseHref').attr("href") + "Search/" + searchString;
+
+        console.log(redirectUrl);
+
+        window.location.href = redirectUrl;
+    }
+
+    //	function replaceAll(str, find, replace) {
+    //	    return str.replace(new RegExp(find, 'g'), replace);
+    //	}
+
+    function replaceAll(str, search, replacement) {
+        return str.split(search).join(replacement);
+    };
+
+    // Search focus
+    $('#searchString').on('focus', function () {
+        $('.input-group-addon').addClass('focus');
+        $(this).addClass('active');
+    });
+
+    $('#searchString').on('focusout', function () {
+        $('.input-group-addon').removeClass('focus');
+    });
+</script>
+
+        	    </div>
+	        </div>
+	    </div>
+	</div>
+
+<div id="TraceInfo">
+    
+</div>                
+                    
+                        <div id="bannerContainer" class="bannerArea">
+                            
+<style>
+    .banner-content {
+        height: 150px;
+    }
+    .banner-logo {
+        max-height: 150px;
+    }
+
+    .bannerArea .banner-content {
+        height: calc(150px * 0.5);
+    }
+    .bannerArea .banner-content .banner-text .banner-text-size {
+        width: calc(100% / 0.5);
+        -webkit-transform: scale(0.5);
+        -moz-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        -o-transform: scale(0.5);
+        transform: scale(0.5);
+        -webkit-transform-origin: 0 0;
+        -moz-transform-origin: 0 0;
+        -ms-transform-origin: 0 0;
+        transform-origin: 0 0;
+    }
+    .bannerArea .banner-logo {
+        max-height: 75px;
+    }
+    @media (min-width: 769px) {
+        .bannerArea .banner-content {
+            height: calc(150px * 0.8);
+        }
+        .bannerArea .banner-content .banner-text .banner-text-size {
+            width: calc(100% / 0.8);
+            -webkit-transform: scale(0.8);
+            -moz-transform: scale(0.8);
+            -ms-transform: scale(0.8);
+            -o-transform: scale(0.8);
+            transform: scale(0.8);
+        }
+        .bannerArea .banner-logo {
+            max-height: 120px;
+        }
+    }
+    @media (min-width: 992px) {
+        .bannerArea .banner-content {
+            height: calc(150px * 0.95);
+        }
+        .bannerArea .banner-content .banner-text .banner-text-size {
+            width: calc(100% / 0.95);
+            -webkit-transform: scale(0.95);
+            -moz-transform: scale(0.95);
+            -ms-transform: scale(0.95);
+            -o-transform: scale(0.95);
+            transform: scale(0.95);
+        }
+        .bannerArea .banner-logo {
+            max-height: 142.5px;
+        }
+    }
+    @media (min-width: 1200px) {
+        .bannerArea .banner-content {
+            height: 150px;
+        }
+        .bannerArea .banner-content .banner-text .banner-text-size {
+            width: 100%;
+            -webkit-transform: scale(1);
+            -moz-transform: scale(1);
+            -ms-transform: scale(1);
+            -o-transform: scale(1);
+            transform: scale(1);
+        }
+        .bannerArea .banner-logo {
+            max-height: 150px;
+        }
+    }
+    
+</style>
+
+<div class="banner-container nobanner-bg" style="max-height: 150px; height: 150px;  ">
+    <div class="banner-content banner-flex">
+            <div id="leftLogo" class="left-logo" style="max-height: 150px;padding: 0px;">
+                <div class="logo-container">  
+                    <img class="banner-logo" src="https://clubrunner.blob.core.windows.net/00000012132/Images/Rotary-Logo_EN21--6-_20220705-015110.png" alt="">
+                </div>
+            </div>
+        <div id="bannerText" class="banner-text" style="max-width: calc(100% - 277px);">
+            <div class="banner-text-size"><div>&nbsp;</div>
+
+<div>&nbsp;</div>
+
+<div>
+<h4>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h4>
+
+<div>&nbsp;</div>
+</div>
+
+<div>&nbsp;</div>
+</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        textAreaSize();
+        window.onload = textAreaSize;
+        window.onresize = textAreaSize;
+
+        function textAreaSize() {
+            var leftLogo = 0, rightLogo = 0, bannerText = document.getElementById("bannerText");
+            if (document.getElementById("leftLogo")) {
+                leftLogo = document.getElementById("leftLogo").offsetWidth;
+            }
+            if (document.getElementById("rightLogo")) {
+                rightLogo = document.getElementById("rightLogo").offsetWidth;
+            }
+
+            bannerText.style.maxWidth = 'calc(100% - ' + (leftLogo + rightLogo) + 'px)';
+        };
+    })();
+
+</script>
+
+                        </div>
+                    
+                
+                    
+                        
+
+
+<nav class="navbar navbar-default" aria-label="page navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a href="" class="navbar-brand" tabindex="-1">
+                            <img src="https://clubrunner.blob.core.windows.net/00000012132/ThemeLogos/en-ca/LightBG_unite-for-good-2025-.png" alt="Katikati logo" role="img">
+                </a>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar" aria-expanded="true">
+            <ul class="nav navbar-nav">
+                <li class=""><a href=" " target="_self" title="" class="menu-item menu-item-primary" tabindex="0">Home</a></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">About Us<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="clubexecutives" target="_self" title="" class="" tabindex="0">Contact Us</a></li><li class=""><a href="page/meeting-info" target="_self" title="" class="" tabindex="0">Meeting &amp; Location</a></li><li class=""><a href="page/history" target="_self" title="" class="" tabindex="0">History</a></li><li class=""><a href="downloads" target="_self" title="" class="" tabindex="0">Downloads</a></li><li class=""><a href="/redirect/goto?portal=content.clubrunner.ca&amp;redirectcontroller=document&amp;redirectaction=list&amp;portallanguagecode=en-ca&amp;accountid=12132" target="_self" title="" class="" tabindex="0">Private Documents</a></li><li class=""><a href="/redirect/gotoold?resourceid=667&amp;accountid=12132" target="_self" title="" class="" tabindex="0">Member Directory</a></li><li class=""><a href="clubexecutives" target="_self" title="" class="" tabindex="0">Club Executives</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">What is Rotary<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="page/join-leaders" target="_self" title="" class="" tabindex="0">Join Leaders</a></li><li class=""><a href="page/exchange-ideas" target="_self" title="" class="" tabindex="0">Exchange Ideas</a></li><li class=""><a href="page/take-action" target="_self" title="" class="" tabindex="0">Take Action</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">Membership - Get Involved<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="page/become-a-member" target="_self" title="" class="" tabindex="0">Become a Member</a></li><li class=""><a href="page/volunteer" target="_self" title="" class="" tabindex="0">Volunteer</a></li><li class=""><a href="page/give" target="_self" title="" class="" tabindex="0">Give</a></li><li class=""><a href="bulletin/addsubscriber" target="_self" title="" class="" tabindex="0">Newsletter Signup</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">Calendar<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="https://www.rotary.org/myrotary/en/calendar" target="_blank" title="" class="" tabindex="0">Rotary Calendar</a></li></ul></li><li class=""><span class="empty-link ">Events</span></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">Club Tools<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/rotary-basics/Rotary-Basics-Booklet.pdf" target="_self" title="" class="" tabindex="0">Rotary Basics</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/rotary-foundation-reference-guide/Rotary-Foundation-Reference-Guide.pdf" target="_self" title="" class="" tabindex="0">Rotary Foundation Reference Guide</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/what-is-a-district-grant-criteria-guidelines/What-is-a-District-Grant---Criteria---Guidelines.pdf" target="_self" title="" class="" tabindex="0">What is a District Grant Criteria &amp; Guidelines</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/d9930-district-grants-criteria-checklist/D9930-District-Grants-Criteria-Checklist.pdf" target="_self" title="" class="" tabindex="0">D9930 District Grants Criteria Checklist</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/d9930-district-grant-timelines/D9930-District-Grant-TimeLines.pdf" target="_self" title="" class="" tabindex="0">D9930 District Grant Timelines</a></li></ul></li><li class=""><span class="empty-link ">Framework</span></li><li class=""><span class="empty-link ">Resources</span></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">Bulletins<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">2026<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-24-feb-2026/bulletin-24th-of-february-2026.pdf" target="_self" title="" class="" tabindex="0">Bulletin 24 Feb 2026</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-17-feb-2026/bulletin-17th-of-february-2026.pdf" target="_self" title="" class="" tabindex="0">Bulletin 17 Feb 2026</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-10-feb-2026/bulletin-10th-of-february-2026.pdf" target="_self" title="" class="" tabindex="0">Bulletin 10 Feb 2026</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-03-feb-2026/bulletin-3rd-of-february-2026.pdf" target="_self" title="" class="" tabindex="0">Bulletin 03 Feb 2026</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-27-jan-2026/bulletin-27th-of-january-2026.pdf" target="_self" title="" class="" tabindex="0">Bulletin 27 Jan 2026</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-20-jan-2026/bulletin-20th-of-january-2026.pdf" target="_self" title="" class="" tabindex="0">Bulletin 20 Jan 2026</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-13-jan-2026/bulletin-13th-of-january-2026.pdf" target="_self" title="" class="" tabindex="0">Bulletin 13 Jan 2026</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">2025<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-16-dec-2025/bulletin-16th-of-december-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 16 Dec 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-09-dec-2025/bulletin-9th-of-december-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 09 Dec 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-02-dec-2025/bulletin-2nd-of-december-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 02 Dec 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-25-nov-2025/bulletin-25th-of-november-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 25 Nov 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-18-nov-2025/bulletin-18th-of-november-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 18 Nov 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-11-nov-2025/bulletin-11th-of-november-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 11 Nov 2026</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-4-nov-2025/bulletin-4th-of-november-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 4 Nov 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-28-oct-2025/bulletin-28th-of-october-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 28 Oct 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-21-oct-2025/bulletin-21st-of-october-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 21 Oct 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-14-oct-2025/Bulletin-14-Oct-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 14 Oct 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-23-sep-2025/Bulletin-23-Sep-2023.pdf" target="_self" title="" class="" tabindex="0">Bulletin 23 Sep 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-16-sep-2025/Bulletin-16-Sep-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 16 Sep 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-9-sep-2025/Bulletin-9-Sep-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 9 Sep 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-26-august-2025/Bulletin-26-August-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 26 Aug 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-19-august-2025/Katikati-RotaryBulletin-19-August-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin_19 Aug 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-12-aug-2025/Bulletin--12-Aug-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 12 Aug 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-22-july-2025/Bulletin-22-July-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 22 Jul 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-15-july-2025/Bulletin_15-July-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 15 Jul 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-8-july-2025/Bulletin_8-July-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 8 July 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-24-jun-2025/Bulletin_24-June-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 24 Jun 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-1-jun-2025/Bulletin-18-Jun-2025--Changeover-.pdf" target="_self" title="" class="" tabindex="0">Bulletin 17 Jun 2025 Changeover</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-10-jun-2025/Bulletin---10-June-25.pdf" target="_self" title="" class="" tabindex="0">Bulletin 10 Jun 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-20-may-2025/Bulletin-20-May-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 20 May 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-27-may-2025/Bulletin---27-May-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 27 May 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-13-may-2025/Bulletin-13-May-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 13 May 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-29-april-2025/Bulletin-29-April-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 29 April 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-22nd-april-2025/Bulletin-22nd-April-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 22 April 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-8th-apr-2025/Bulletin-8th-Apr-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 8th Apr 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-25-mar-2025/Bulletin-25-Mar-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 25 Mar 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-18-mar-2025/Bulletin-Mar-18-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 18 Mar 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-11-mar-2025/Bulletin-11-Mar-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 11 Mar 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-18-feb-2025/Bulletin-18-Feb-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 18 Feb 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-11th-feb-2025/Bulletin-February-11-2025.pdf" target="_self" title="" class="" tabindex="0">Bulletin 11 Feb 2025</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-1st-feb-2025/Bulletin-1-Feb-25.pdf" target="_self" title="" class="" tabindex="0">Bulletin 1 Feb 2025</a></li></ul></li><li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" title="" tabindex="0" aria-haspopup="true" aria-expanded="false">2024<b class="caret" aria-hidden="true"></b></a><ul class="dropdown-menu"><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-12th-nov-2024/Bulletin-November-12-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 12 Nov 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-22nd-oct-2024/Bulletin-October-22-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 22 Oct 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-15th-oct-2024/Bulletin-October-15-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 15 Oct 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-8th-oct-2024/Bulletin-October-8-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 8 Oct 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-17th-sept-2024/Bulletin-September-17-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 17 Sept 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-17th-sept-2024/Bulletin-September-17-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 9 Sept 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-20th-august-2024/Bulletin-August-20-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 20 Aug 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-6th-august-2024/Bulletin-August-6-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 6 Aug 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-23rd-july-2024/Bulletin-July-23-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 23 Jul 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-16th-july-2024/Bulletin-July-16-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 16 Jul 2024</a></li><li class=""><a href="https://clubrunner.blob.core.windows.net/00000012132/en-ca/files/homepage/bulletin-9th-july-2024/Bulletin-July-9-2024.pdf" target="_self" title="" class="" tabindex="0">Bulletin 9 Jul 2024</a></li></ul></li></ul></li><li class=""><a href="https://portal.clubrunner.ca/12132/event/copy-of-garden-ramble-2025" target="_self" title="" class="" tabindex="0">Garden Ramble 2025</a></li><li class=""><a href="https://katikatirotary.org.nz/page/default-template-4-1-1/" target="_self" title="" class="" tabindex="0">Stories</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+                    
+            </header>
+        <main class="main-content-wrapper page">
+            <div class="main-content-wrapper-inner">
+                
+
+
+<div class="HomeContentWrapper">
+    
+<script type="text/javascript" src="https://globalassets.clubrunner.ca/scripts/uiblock/jquery.blockUI.min.js?_=639204089962474487" async=""></script>
+
+<div style="display: none;" id="blockUiMessage">
+    <div id="bulletinPublishing2"><i class="fas fa-spinner fa-spin"></i></div>
+</div>
+
+<script type="text/javascript">
+    // Prevent multiple submit
+    var canBlock = true;
+    $(function ()
+    {
+        $('form').submit(function()
+        {
+            // Don't block UI on CkEditor5 EmbedMedia form submit.
+            if (this.classList.contains('ck-media-form')) {
+                return;
+            }
+            if (!canBlock)
+            {
+                return true;
+            }
+            else
+                if ($("form").valid())
+                {
+                    blockUi();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+        });
+    });
+
+
+    function blockUi()
+    {
+        $.blockUI(
+            {
+                theme: true,
+                title: '',
+                message: $("#blockUiMessage"),
+                baseZ: 2000,
+                draggable: false,
+                onBlock: function() {
+					$(".blockPage").addClass( "" )
+				}
+
+            });
+    }
+
+    function unBlockUi()
+    {
+        $.unblockUI();
+
+    }
+
+
+    function setNoBlock(){
+        canBlock = false;
+    }
+
+    function setBlock() {
+        canBlock = true;
+    }
+</script>
+    <div class="content-wrapper">
+        <header class="page-header contentHeaderBreadcrumb">
+	        <div class="contentHeaderBreadcrumbWrap noad">
+		        <div class="contentHeaderBreadcrumb2">
+				        <h1 class="themeColorDark"><span>Members Portal</span></h1>
+		        </div>
+	        </div>
+        </header>
+    </div>
+		
+
+
+
+
+    <section class="band-4 band-wrapper">
+        <div class="container equal-columns">
+            <div class="col-xs-12 col-sm-6 side-column">
+                <section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+    <div class="boxContainer1">
+        <div class="boxContainer2">
+            <div class="MainWidgetWrapper CustomWidget">
+                    <div class="boxHeaderContainer1 " style="">  
+                        <div class="boxHeaderContainer2" style="">
+                            <div class="h2 widget-title" style=""> <p>Update Home Page</p></div>
+                        </div>
+                    </div>
+                <div class="boxContentCon1 " style="">
+                    <div style="">
+                        <div class="WidgetWrapper">
+                            <div class="CustomWidgetBody">
+    <div class="inlineEditor" contenteditable="false" id="bcw_b29947b4-a424-4b30-893d-b9abab04814d" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetdataid="b29947b4-a424-4b30-893d-b9abab04814d" widgetname="Update Home Page " widgetsystemname="CustomWidget" title="" ckeditortoolbarsname="CkEditorToolBarLight">
+        <p>Want to edit the home page?&nbsp;</p><p>Follow the link to head to the page designer. From there, click the home page and edit as required.</p><p><a href="https://content.clubrunner.ca/12132/Page/MainLive?SelectedId=3c8bb4ca-04f7-4b52-bbf2-239456f462ef">Page Designer</a></p><p>Changes to the home page may affect the whole layout. Please see the user guide if unsure.</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    </div>
+</div>
+<span id="title_b29947b4-a424-4b30-893d-b9abab04814d" style="display:none">&lt;p&gt;Update Home Page&lt;/p&gt;</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+    <div class="boxContainer1">
+        <div class="boxContainer2">
+            <div class="MainWidgetWrapper CustomWidget">
+                    <div class="boxHeaderContainer1 " style="">  
+                        <div class="boxHeaderContainer2" style="">
+                            <div class="h2 widget-title" style=""> <p>Add Event</p></div>
+                        </div>
+                    </div>
+                <div class="boxContentCon1 " style="">
+                    <div style="">
+                        <div class="WidgetWrapper">
+                            <div class="CustomWidgetBody">
+    <div class="inlineEditor" contenteditable="false" id="bcw_34581e43-81ad-4a7d-aec6-1f578e3e33c5" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetdataid="34581e43-81ad-4a7d-aec6-1f578e3e33c5" widgetname="Add Event " widgetsystemname="CustomWidget" title="" ckeditortoolbarsname="CkEditorToolBarLight">
+        <p>Have an upcoming event?</p><p>Follow the link to head to the events page. From there you can create or manage events in the system.&nbsp;</p><p>When a future event is created, the event is automatically added to the calender and upcoming events, which can be seen on the home page.</p><p><a href="https://admin.clubrunner.ca/12132/Event/List?SelectedId=0988026e-9516-4a62-a56b-1338643b1086">Events Page</a></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    </div>
+</div>
+<span id="title_34581e43-81ad-4a7d-aec6-1f578e3e33c5" style="display:none">&lt;p&gt;Add Event&lt;/p&gt;</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+            <div class="col-xs-12 col-sm-6 side-column">
+                <section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+    <div class="boxContainer1">
+        <div class="boxContainer2">
+            <div class="MainWidgetWrapper CustomWidget">
+                    <div class="boxHeaderContainer1 " style="">  
+                        <div class="boxHeaderContainer2" style="">
+                            <div class="h2 widget-title" style=""> <p>Edit Home Page Stories</p></div>
+                        </div>
+                    </div>
+                <div class="boxContentCon1 " style="">
+                    <div style="">
+                        <div class="WidgetWrapper">
+                            <div class="CustomWidgetBody">
+    <div class="inlineEditor" contenteditable="false" id="bcw_e7e4dc22-26bc-4c15-a403-ad50bf5a9a91" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetdataid="e7e4dc22-26bc-4c15-a403-ad50bf5a9a91" widgetname="Edit Home Page Stories " widgetsystemname="CustomWidget" title="" ckeditortoolbarsname="CkEditorToolBarLight">
+        <p>Changes to the home page?</p><p>Follow the link to head to the home page stories manager. From there you can select and edit the stories that appear on the home page.</p><p><a href="https://content.clubrunner.ca/12132/Story/ContainerNewsList?ClassCode=Page&amp;WidgetId=0b2a72e8-9b4b-4531-b50f-c9167eec15b7&amp;ContainerId=58dd58f0-797c-4a97-ac7a-1a87423728b5&amp;RedirectContainerId=3da1d46c-245a-4cce-96d0-faede85fe934&amp;SelectedId=3c8bb4ca-04f7-4b52-bbf2-239456f462ef">Home Page Stories</a></p><p>Note that this library is separate from the stories page library. See the user guide for more details.</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+    </div>
+</div>
+<span id="title_e7e4dc22-26bc-4c15-a403-ad50bf5a9a91" style="display:none">&lt;p&gt;Edit Home Page Stories&lt;/p&gt;</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><section class="PageWidget" style="padding-top: 0px;padding-bottom: 0px;padding-left: 0px;padding-right: 0px;">
+    <div class="boxContainer1">
+        <div class="boxContainer2">
+            <div class="MainWidgetWrapper CustomWidget">
+                    <div class="boxHeaderContainer1 " style="">  
+                        <div class="boxHeaderContainer2" style="">
+                            <div class="h2 widget-title" style=""> <p>Update Stories Page</p></div>
+                        </div>
+                    </div>
+                <div class="boxContentCon1 " style="">
+                    <div style="">
+                        <div class="WidgetWrapper">
+                            <div class="CustomWidgetBody">
+    <div class="inlineEditor" contenteditable="false" id="bcw_507e6986-7474-4fe2-857d-563fd728da8d" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetdataid="507e6986-7474-4fe2-857d-563fd728da8d" widgetname="Update Stories Page " widgetsystemname="CustomWidget" title="" ckeditortoolbarsname="CkEditorToolBarLight">
+        <p>Want to edit the stories page?</p><p>Follow the link to head to stories page manager. From there you can select and edit the stories that appear on the stories page.</p><p><a href="https://content.clubrunner.ca/12132/Story/PageNewsList?ClassCode=Page&amp;WidgetId=479ef054-0682-4a7f-bf51-999d1a10b034&amp;ContainerId=c1e2d2a0-d23c-44af-80f2-126598d4a33e&amp;RedirectContainerId=c1e2d2a0-d23c-44af-80f2-126598d4a33e&amp;SelectedId=3c8bb4ca-04f7-4b52-bbf2-239456f462ef">Stories Page Library</a></p><p>Note that this library is seperate from the home page library. See the user guide for more details.</p>
+    </div>
+</div>
+<span id="title_507e6986-7474-4fe2-857d-563fd728da8d" style="display:none">&lt;p&gt;Update Stories Page&lt;/p&gt;</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="band-6 band-wrapper">
+        <div class="container">
+            <div class="col-xs-12 single-column">
+                <section class="PageWidget" style="padding-top: 50px;padding-bottom: 50px;padding-left: 50px;padding-right: 50px;">
+    <div class="boxContainer1">
+        <div class="boxContainer2">
+            <div class="MainWidgetWrapper CustomWidget">
+                    <div class="boxHeaderContainer1 " style="">  
+                        <div class="boxHeaderContainer2" style="">
+                            <div class="h2 widget-title" style=""> <p>Feeling Stuck?</p></div>
+                        </div>
+                    </div>
+                <div class="boxContentCon1 " style="">
+                    <div style="">
+                        <div class="WidgetWrapper">
+                            <div class="CustomWidgetBody">
+    <div class="inlineEditor" contenteditable="false" id="bcw_a07774a3-6ad2-4784-87b4-09dd20ecac7a" widgetid="46ad117f-edf0-4c86-b438-18eed9de0109" widgetdataid="a07774a3-6ad2-4784-87b4-09dd20ecac7a" widgetname="Feeling Stuck? " widgetsystemname="CustomWidget" title="" ckeditortoolbarsname="CkEditorToolBarLight">
+        <p>*** link ***</p>
+    </div>
+</div>
+<span id="title_a07774a3-6ad2-4784-87b4-09dd20ecac7a" style="display:none">&lt;p&gt;Feeling Stuck?&lt;/p&gt;</span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+                
+            </div>
+
+
+        </main>
+
+            <footer class="footer-band">
+                <div class="footer-inner">                    
+                        
+                            
+                                <div id="footerContainer1">
+    <div class="footerDecoration">
+    </div>
+    <div id="footerContainer2">
+        <div id="footerContainer3">
+            <div id="footerContainer4"><div class="WebsiteFooter footer-list-display S1-Lilac Elegant">
+	<div class="container">
+		<div class="website-footer">
+			<div class="container"><div class="row"><div class="website-footer"><div class="row"><div class="col-sm-4"><h4>About Katikati</h4><p>Our club members are dedicated people who share a passion for both community service and friendship. Becoming a Rotarian connects you with a diverse group of professionals who share your drive to give back.</p><p>Our club accepts new members by invitation.</p></div><div class="col-sm-4"><h4>Rotary at a Glance</h4><p>Rotary brings together a global network of volunteer leaders who dedicate their time and talent to tackle the world’s most pressing humanitarian challenges. Rotary connects 1.2 million members from more than 200 countries and geographical areas. Their work impacts lives at both the local and international levels.</p></div><div class="col-sm-4"><h4>Contact Us</h4><p>Keep in touch, or reach out to us from our social media websites!</p><p><a href="http://www.linkedin.com/groups?gid=858557" target="_blank"><img alt="LinkedIn" height="40" src="https://clubrunner.blob.core.windows.net/00000000001/Images/Social%20Media/Linkedin_58.png" style="margin-left:5px; margin-right:5px" width="40"></a><a href="http://www.youtube.com/user/RotaryInternational" target="_blank"><img alt="YouTube" height="40" src="https://clubrunner.blob.core.windows.net/00000000001/Images/Social%20Media/YouTube_58.png" style="margin-left:5px; margin-right:5px" width="40"></a><a href="http://twitter.com/rotary" target="_blank"><img alt="Twitter" height="40" src="https://clubrunner.blob.core.windows.net/00000000001/Images/Social%20Media/Twitter_58.png" style="margin-left:5px; margin-right:5px" width="40"></a><a href="https://www.facebook.com/KatikatiRotaryClub" target="_blank"><img alt="Facebook" height="40" src="https://clubrunner.blob.core.windows.net/00000000001/Images/Social%20Media/Facebook_58.png" style="margin-left:5px; margin-right:5px" width="40"></a></p></div></div></div></div><div class="row"><div class="col-xs-12"><table style="width:100%"><tbody><tr><td align="right" width="20%"><img height="75" src="https://clubrunner.blob.core.windows.net/00000000011/Images/RotaryMoE_RGB.png" style="border-width:0px; margin-right:30px" width="75"></td><td width="80%">All materials and photos, unless otherwise specified, are copyright of the Rotary Club of Katikati.<br>All Rotary marks, logos, and copyrighted content is owned by Rotary International, and used with permission.</td></tr></tbody></table><div>&nbsp;</div></div></div></div>
+		</div>
+	</div>
+</div>
+				
+
+
+<div class="system-footer">
+    <div class="container">
+        <a id="editContentLink" href="https://content.clubrunner.ca/12132/Content/LiveDesign?ClassCode=Page&amp;ContainerId=287acd45-e566-43de-afb6-949b56c2cd6c" target="_blank" style="" class="edit-page" title="Edit this page">
+            <div class="edit-page-block pulse-icon pulse-once">
+                <span class="sr-only">Edit this page</span>
+                <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+            </div>
+        </a>
+        <div id="rights">
+            <div id="rights2">
+                Powered by <a href="https://www.clubrunner.ca">ClubRunner</a> © 2002–2026&nbsp; All rights reserved.
+                <br>
+                <a href="privacy-policy">Privacy Statement</a>
+
+                        | <a href="cookie-policy">Cookie Policy</a>
+                                    | <a target="_blank" href="https://www.clubrunnersupport.com">Online Help</a> | <a target="_blank" href="https://links.myclubrunner.com/system-requirements">System Requirements</a>                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+                <div id="TraceInfoFooter">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                            
+                    
+
+                </div>
+            </footer>
+            <div id="backToTopContainer"></div>
+        <script type="text/javascript" async="">
+
+            // $(window).load(function () {
+            //     var contentSize = function () {
+            //         var $windowHeight = $('.main-content-wrapper').height();
+            //         $('.HomeContentWrapper').css("min-height", $windowHeight);
+            //     };
+            //     contentSize();
+            //     $(window).resize(contentSize);
+            // });
+
+            $(window).on('load scroll resize', function () {
+                if (typeof showBackTopBtn === 'function') {
+                    showBackTopBtn();
+                }
+            });
+
+            $(function () {
+                $('.focusItem').focus();
+
+                $.ajaxSetup({
+                    // Disable caching of AJAX responses
+                    cache: false
+                });
+
+                // Setup edit link
+		     $("#editContentLink").attr("href", "https://content.clubrunner.ca/12132/Content/LiveDesign?ClassCode=Page&ContainerId=287acd45-e566-43de-afb6-949b56c2cd6c");
+                		     $("#editContentLink").show();
+            });
+        </script>
+    </div>
+
+
+            <script>
+                document.querySelectorAll( 'oembed[url]' ).forEach( element => 
+                {
+                    //console.log('processing element ' + element);
+                    iframely.load( element, element.attributes.url.value );
+                } );
+            </script>
+        
+    <span style="display: none" app-type="appservice" app-name="crportal" branch="refs/heads/production" revision="2996765346974be266da3d41be2820bb51ca9334" revision-date="21 Jul 2026 20:47"></span>
+
+<div role="log" aria-live="assertive" aria-relevant="additions" class="ui-helper-hidden-accessible"></div></body>

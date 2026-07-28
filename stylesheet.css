@@ -1,0 +1,136 @@
+:root {
+    --welcome-img-width: 80%;
+    --welcome-img-height: 800px;
+
+    --event-img-width: 1000px;
+    --event-img-height: 600px;
+    --event-text-size: 2rem;
+    --event-title-size: 2.5rem;
+
+    --stories-img-width: 100%;
+    --stories-img-height: 350px;
+
+    --text-box-padding: 20px;
+    --wrapper-padding: 10px;
+
+    --stories-title-size: 1.8rem;
+    --stories-text-size: 1.2rem;
+}
+
+/*  
+    HOME PAGE  
+*/
+
+/* 
+    band 1 | carousel section 
+*/
+.custom-home-page .band-1 {
+    padding: var(--wrapper-padding);
+
+    /* border: 2px solid red; */
+}
+/*
+.custom-home-page .band-1 .PageWidget .carousel {
+    border: solid 2px yellow; 
+}
+*/
+.custom-home-page .band-1 .PageWidget .carousel img {
+    width: var(--welcome-img-width);
+    height: var(--welcome-img-height);
+}
+.custom-home-page .band-1 .PageWidget .inlineEditor h3 {
+    font-size: var(--event-title-size);
+    text-align: center;
+}
+.custom-home-page .band-1 .PageWidget .inlineEditor p {
+    padding: var(--text-box-padding);
+    font-size: var(--event-text-size);
+    width: 60%;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+
+    /* border: 2px solid cyan; */
+}
+
+/* 
+    band 2 | event section 
+*/
+.custom-home-page .band-2 {
+    padding: var(--wrapper-padding);
+
+    /* border: 2px solid green; */
+}
+.custom-home-page .band-2 .PageWidget .predefined-image img {
+    width: var(--event-img-width);
+    height: var(--event-img-height);
+    display: block;
+    margin: 0 auto;
+
+    /* border: 2px solid yellow; */
+}
+.custom-home-page .band-2 .PageWidget .inlineEditor h3 {
+    font-size: var(--event-title-size);
+    text-align: center;
+}
+.custom-home-page .band-2 .PageWidget .inlineEditor  {
+    padding: var(--text-box-padding);
+    font-size: var(--event-text-size);
+    width: 700px;
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+
+    /* border: 2px solid cyan; */
+}
+
+/* 
+    band 3 | grid section 
+*/
+.custom-home-page .band-3 {
+    padding: var(--wrapper-padding);
+
+    /* border: 2px solid blue; */
+}
+.custom-home-page .band-3 .PageWidget {
+    padding: var(--text-box-padding);
+    margin: 10px;
+
+    /* border: 2px solid yellow; */
+}
+.custom-home-page .band-3 .PageWidget .CustomWidget {
+    padding: var(--text-box-padding);
+}
+
+/* 
+    band 4 | stories & information section 
+*/
+.custom-home-page .band-4 {
+    padding: var(--wrapper-padding);
+
+    /* border: 2px solid red; */
+}
+.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text {
+    margin: 10px;
+    gap: 25px;
+}
+.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text img {
+    width: var(--stories-img-width);
+    height: var(--stories-img-height);
+}
+.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text .preformatted-block .inlineEditor h3 {
+    font-size: var(--stories-title-size);
+    padding: 15px;
+}
+.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text .preformatted-block .inlineEditor p {
+    font-size: var(--stories-text-size);
+    padding: 5px;
+}
+.custom-home-page .band-4 .PageWidget .ClubInfo {
+    padding: var(--wrapper-padding);
+
+    /* border: 2px solid yellow; */
+}
+
+
+
