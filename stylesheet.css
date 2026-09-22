@@ -1,136 +1,159 @@
 :root {
-    --welcome-img-width: 80%;
-    --welcome-img-height: 800px;
-
-    --event-img-width: 1000px;
-    --event-img-height: 600px;
-    --event-text-size: 2rem;
-    --event-title-size: 2.5rem;
-
-    --stories-img-width: 100%;
-    --stories-img-height: 350px;
-
-    --text-box-padding: 20px;
-    --wrapper-padding: 10px;
-
-    --stories-title-size: 1.8rem;
-    --stories-text-size: 1.2rem;
+    --accent-purple: #401D53;
 }
 
-/*  
-    HOME PAGE  
-*/
+/* custom home page */
 
-/* 
-    band 1 | carousel section 
-*/
-.custom-home-page .band-1 {
-    padding: var(--wrapper-padding);
+/* band 1 */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-1 {
+    padding: 5px 10px;
+}
 
-    /* border: 2px solid red; */
+/* band 1 carousel */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-1 .single-column .PageWidget 
+.boxContainer1 .boxContainer2 .MainWidgetWrapper.carousel img {
+    height: 50dvh; /* change image height here */
 }
-/*
-.custom-home-page .band-1 .PageWidget .carousel {
-    border: solid 2px yellow; 
-}
-*/
-.custom-home-page .band-1 .PageWidget .carousel img {
-    width: var(--welcome-img-width);
-    height: var(--welcome-img-height);
-}
-.custom-home-page .band-1 .PageWidget .inlineEditor h3 {
-    font-size: var(--event-title-size);
-    text-align: center;
-}
-.custom-home-page .band-1 .PageWidget .inlineEditor p {
-    padding: var(--text-box-padding);
-    font-size: var(--event-text-size);
+
+/* band 1 welcome global widget text */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-1 .single-column .PageWidget 
+.boxContainer1 .boxContainer2 .MainWidgetWrapper .boxContentCon1 .WidgetWrapper
+.CustomWidgetBody .inlineEditor {
     width: 60%;
-    display: block;
-    margin: 5px auto;
-    text-align: center;
-
-    /* border: 2px solid cyan; */
-}
-
-/* 
-    band 2 | event section 
-*/
-.custom-home-page .band-2 {
-    padding: var(--wrapper-padding);
-
-    /* border: 2px solid green; */
-}
-.custom-home-page .band-2 .PageWidget .predefined-image img {
-    width: var(--event-img-width);
-    height: var(--event-img-height);
-    display: block;
     margin: 0 auto;
-
-    /* border: 2px solid yellow; */
+    text-align: center;
+    padding: 20px 40px;
+    margin-top: 60px;
 }
-.custom-home-page .band-2 .PageWidget .inlineEditor h3 {
-    font-size: var(--event-title-size);
+
+/* band 2 */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-2 {
+    margin-top: 40px;
+}
+
+/* band 2 event global widget title */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-2 .container .single-column
+.PageWidget .boxContainer1 .boxContainer2 .MainWidgetWrapper
+.boxHeaderContainer1 .boxHeaderContainer2 .h2 {
     text-align: center;
 }
-.custom-home-page .band-2 .PageWidget .inlineEditor  {
-    padding: var(--text-box-padding);
-    font-size: var(--event-text-size);
-    width: 700px;
-    display: block;
-    margin: 5px auto;
+
+/* band 2 event global widget image */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-2 .container .single-column
+.PageWidget .boxContainer1 .boxContainer2 .MainWidgetWrapper
+.boxContentCon1 .WidgetWrapper .CustomWidgetBody .inlineEditor img {
+    border: 2px solid var(--accent-purple);
+    width: 400px; /* change image width here */
+    height: 500px; /* change image height here */
+}
+
+/* band 2 event global widget text */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-2 .container .single-column
+.PageWidget .boxContainer1 .boxContainer2 .MainWidgetWrapper
+.boxContentCon1 .WidgetWrapper .CustomWidgetBody .inlineEditor {
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    margin-top: 10px;
     text-align: center;
-
-    /* border: 2px solid cyan; */
 }
 
-/* 
-    band 3 | grid section 
-*/
-.custom-home-page .band-3 {
-    padding: var(--wrapper-padding);
-
-    /* border: 2px solid blue; */
-}
-.custom-home-page .band-3 .PageWidget {
-    padding: var(--text-box-padding);
-    margin: 10px;
-
-    /* border: 2px solid yellow; */
-}
-.custom-home-page .band-3 .PageWidget .CustomWidget {
-    padding: var(--text-box-padding);
+/* band 3 */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-3 {
+    margin-top: 40px;
 }
 
-/* 
-    band 4 | stories & information section 
-*/
-.custom-home-page .band-4 {
-    padding: var(--wrapper-padding);
-
-    /* border: 2px solid red; */
-}
-.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text {
-    margin: 10px;
-    gap: 25px;
-}
-.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text img {
-    width: var(--stories-img-width);
-    height: var(--stories-img-height);
-}
-.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text .preformatted-block .inlineEditor h3 {
-    font-size: var(--stories-title-size);
-    padding: 15px;
-}
-.custom-home-page .band-4 .PageWidget .preformatted-image-triple-text .preformatted-block .inlineEditor p {
-    font-size: var(--stories-text-size);
-    padding: 5px;
-}
-.custom-home-page .band-4 .PageWidget .ClubInfo {
-    padding: var(--wrapper-padding);
-
-    /* border: 2px solid yellow; */
+/* band 3 main column */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-3 .wide-two-narrow .main-column .PageWidget
+.boxContainer1 {
+    border: 2px solid var(--accent-purple);
+    margin-top: 10px;
 }
 
+/* band 3 side column widgets */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-3 .wide-two-narrow .side-column .PageWidget 
+.boxContainer1 {
+    border: 2px solid var(--accent-purple);
+    padding: 10px 20px;
+} 
 
+/* band 4 */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-4 {
+    margin-top: 40px;
+}
+
+/* band 4 home page news */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-4 .container .single-column .PageWidget 
+.boxContainer1 .boxContainer2 .MainWidgetWrapper.news {
+    border: 2px solid var(--accent-purple);
+    padding: 10px 20px;
+}
+
+/* band 4 see more stories */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-4 .container .single-column .PageWidget 
+.boxContainer1 .boxContainer2 .MainWidgetWrapper.CustomWidget {
+    padding: 10px 20px;
+    text-align: end;
+}
+
+/* band 4 about club */
+.custom-home-page .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-4 .container .single-column .PageWidget 
+.boxContainer1 .boxContainer2 .MainWidgetWrapper.ClubInfo {
+    padding: 10px 20px;
+}
+
+/* members portal */
+
+/* band 1 */
+.custom-members-portal .main-content-wrapper .main-content-wrapper-inner
+.HomeContentWrapper .band-1 {
+    padding: 5px 10px;
+}
+
+/* band 1 members portal global widget text */
+.custom-members-portal .main-content-wrapper .main-content-wrapper-inner
+.HomeContentWrapper .band-1 .single-column .PageWidget 
+.boxContainer1 .boxContainer2 .MainWidgetWrapper 
+.boxContentCon1 .WidgetWrapper .preformatted .col-xs-12 {
+    border: 2px solid var(--accent-purple);
+    padding: 10px 20px;
+    height: 420px;
+}
+
+/* band 4 page widgets */
+.custom-members-portal .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-4 .equal-columns .col-xs-12 .PageWidget {
+    border: 2px solid var(--accent-purple);
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* band 4 bulletins widget */
+.custom-members-portal .main-content-wrapper .main-content-wrapper-inner
+.HomeContentWrapper .band-4 .equal-columns .col-xs-12 .PageWidget 
+.boxContainer1 .boxContainer2 .CustomWidget {
+    padding: 10px 20px;
+}
+
+/* stories page */
+.custom-stories .main-content-wrapper .main-content-wrapper-inner 
+.HomeContentWrapper .band-1 {
+    padding: 10px 20px;
+}
 
